@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Icon Page -->
+    <link rel="icon" href="image/logo.png" type="image/x-icon" />
+
+    <!-- Title Page -->
+    <title>Travelholic</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/42d5adcbca.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Data AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="topnav" id="myTopnav">
+        <div class="container-header">
+          <img src="image/logo-navbar.png" alt="logo" />
+        </div>
+        <a href="#content-header">Home</a>
+        <a href="#content-about">About Us</a>
+        <a href="#">News</a>
+        <a href="#content-destination">Destination</a>
+        <a href="#content-recommendation">Recommendation</a>
+        <a href="#content-gallery">Gallery</a>
+        <a href="#content-message">Contact</a>
+        <div class="dropdown">
+          <div class="mainmenubtn">Travel Guide</div>
+          <div class="dropdown-child">
+            <a href="#">Travel Rules</a>
+            <a href="#">Travel Tips</a>
+            <a href="#">Weather</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="mainmenubtn">Virtual Tour</div>
+          <div class="dropdown-child">
+            <a href="#content-tour">Borobudu Temple</a>
+            <a href="#">Keraton Yogyakarta</a>
+            <a href="#">Prambanan Temple</a>
+            <a href="#">Mount Bromo</a>
+            <a href="#">Lawang Sewu</a>
+            <a href="#">Toba Lake</a>
+          </div>
+        </div>
+        <div class="cari">
+          <form class="form-header">
+            <input
+              class="search"
+              type="text"
+              placeholder="enter text here..."
+              required
+            />
+            <button class="button" type="button">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <!-- Content About Us -->
+      <div class="content-about" id="content-about">
+        <div
+          class="container container-750"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
+          <div class="row-about">
+            <div class="col-25">
+              <h1 class="accent-undefined">It's Travel-<br />holic</h1>
+            </div>
+            <div class="col-25">
+              <p class="katamari-field">
+                Travelholic is a sercive to help customers visit more places in
+                Indonesia easier. We serve you many destination that can give
+                you an experience to live in paradise island.
+              </p>
+              <br />
+              <p class="katamari-field">
+                We brings you an exciting journey by our travel. We will provide
+                everything on your journey. Our facilities make your day be
+                amazing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content Header -->
+      <div
+        class="content-header"
+        id="content-header"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <!-- Slideshow -->
+        <div class="slidshow-container">
+          <div
+            class="slide fade text-center"
+            style="
+              background: linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url('image/content-header/header-image-1.jpeg');
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          >
+            <h1>Explore Indonesia</h1>
+            <h3>
+              <i>
+                Let's Find Out About Destination, Culture, and Many Special
+                Things of Indonesia</i
+              >
+            </h3>
+          </div>
+          <div
+            class="slide fade text-center"
+            style="
+              background: linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url('image/content-header/header-image-2.jpeg');
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          >
+            <h1>Beautiful Indonesia</h1>
+            <h3>
+              <i>The Most Beautiful Island, The Paradise Island, INDONESIA</i>
+            </h3>
+          </div>
+          <div
+            class="slide fade text-center"
+            style="
+              background: linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url('image/content-header/header-image-3.jpeg');
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          >
+            <h1>Indonesia Culture</h1>
+            <h3>
+              <i>The Natural Richness and Cultural Diversity of Indonesia</i>
+            </h3>
+          </div>
+        </div>
+        <a href="#content-destination"><div class="scroll-down"></div></a>
+      </div>
+
+      <!-- Content Favorite Destination -->
+      <div class="content-destination" id="content-destination">
+        <div
+          class="container container-950"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-duration="1000"
+        >
+          <h2>
+            <strong style="color: #004b79">Most Popular</strong> Destination
+          </h2>
+          <p><i>The best destination recommendation of Indonesia</i></p>
+          <div class="row carousel owl-carousel">
+            <div class="card">
+              <a
+                href="image/content-destination/destination-bali.jpg"
+                target="_blank"
+              >
+                <img
+                  src="image/content-destination/destination-bali.jpg"
+                  alt="destination"
+                />
+              </a>
+              <div class="card-body">
+                <h4>Bali</h4>
+                <p>
+                  Bali is unique, Bali is unmatched There is no other place like
+                  Bali in this world. A magical blend of culture, people,
+                  nature, activities, weather, culinary delights, nightlife, and
+                  beautiful accommodation. Bali is rated as one of the best
+                  travel destinations in the world by countless websites, review
+                  portals, and travel magazines each year for very good reasons.
+                  Whatever your age, background, budget or interest, there is
+                  something great for everyone to explore and discover. And
+                  that's a promise.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <a
+                href="image/content-destination/destination-mahameru.jpg"
+                target="_blank"
+                ><img
+                  src="image/content-destination/destination-mahameru.jpg"
+                  alt="destination"
+              /></a>
+              <div class="card-body">
+                <h4>Mount Semeru</h4>
+                <p>
+                  The Legend of Mount Semeru as the Nail of the Island of Java.
+                  Launching from Soe Hok Gie's book Once Again: Books, Parties,
+                  and Love in the Nature of the Nation written by Rudi Badil et
+                  al., there is an ancient book called Tantu Pagelaran which is
+                  believed to be from the 15th century. In it it is recorded
+                  that once the island of Java was bobbing on the ocean. In the
+                  legend it is called, Batara Guru who is the sole ruler, asked
+                  the gods and giants to move Mount Mahameru in India as a nail
+                  on the island of Java so that it would not move.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <a
+                href="image/content-destination/destination-jakarta.jpg"
+                target="_blank"
+                ><img
+                  src="image/content-destination/destination-jakarta.jpg"
+                  alt="destination"
+              /></a>
+
+              <div class="card-body">
+                <h4>DKI Jakarta</h4>
+                <p>
+                  Jakarta is the capital city of the Republic of Indonesia.
+                  Jakarta is a huge, sprawling metropolis, home to over 10
+                  million people with diverse ethnic group backgrounds from all
+                  over Indonesia. During the day, the number increases with
+                  commuters making their way to work in the city and flock out
+                  again in the evenings. Located on the northwest of Java
+                  Island, the province of DKI Jakarta has rapidly expanded
+                  through the years, absorbing many villages in the process. In
+                  fact, Jakarta is a conglomeration of villages known as
+                  kampung, now crossed by main roads and superhighways.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <a
+                href="image/content-destination/destination-mandalika.jpg"
+                target="_blank"
+                ><img
+                  src="image/content-destination/destination-mandalika.jpg"
+                  alt="destination"
+              /></a>
+
+              <div class="card-body">
+                <h4>Mandalika Circuit</h4>
+                <p>
+                  Mandalika International Street Circuit is located in the
+                  Mandalika resort area on the Central Lombok Regency in West
+                  Nusa Tenggara province of Indonesia. The circuit hosted rounds
+                  of the Asia Talent Cup and Superbike World Championship in
+                  2021, and it will host rounds also for Grand Prix motorcycle
+                  races and GT World Challenge Asia. The sports cluster and
+                  entertainment project, measuring 120 hectares, is expected to
+                  include the construction of hotels and other facilities. As a
+                  purposely-constructed racing track with wide run-off areas, it
+                  is claimed to be a street circuit as parts may be used in
+                  future, allowing normal traffic access to new resort
+                  facilities.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <a
+                href="image/content-destination/destination-rajaampat.jpg"
+                target="_blank"
+                ><img
+                  src="image/content-destination/destination-rajaampat.jpg"
+                  alt="destination"
+              /></a>
+
+              <div class="card-body">
+                <h4>Rajaampat</h4>
+                <p>
+                  Far from the view-blocking skyscrapers, dense and hectic
+                  concrete jungles, congested traffics, flickering electric
+                  billboards, endless annoying noises, and all the nuisances of
+                  modern cities, you will find a pristine paradise where Mother
+                  Nature and warm friendly people welcome you with all the
+                  exceptional wonders in Raja Ampat, the islands-regency in West
+                  Papua Province. With all the spectacular wonders above and
+                  beyond its waters, as well as on land and amidst the thick
+                  jungles, this is truly the place where words such as
+                  beautiful, enchanting, magnificent, and fascinating get its
+                  true physical meaning.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content "Apa Kata Mereka" -->
+      <div class="content-recommendation" id="content-recommendation">
+        <div
+          class="container container-1100"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <div class="container-form">
+            <div class="main-form">
+              <div class="heading-form">
+                <h2>What <strong style="color: #004b79">They</strong> Say</h2>
+                <p><i>People say about their experiences in Indonesia</i></p>
+              </div>
+              <div class="form-content cf">
+                <div class="form">
+                  <div class="isi-form">
+                    <h3>Give Us Your Impression</h3>
+                    <form>
+                      <input type="text" placeholder="Your Name" />
+                      <input type="text" placeholder="Your Email" />
+                      <input
+                        type="text"
+                        placeholder="Your Visited Destination"
+                      />
+                      <textarea
+                        name="Kesan"
+                        cols="30"
+                        rows="10"
+                        placeholder="Your Impression"
+                      ></textarea>
+                      <a href="#">Submit</a>
+                    </form>
+                  </div>
+                </div>
+                <div class="kesan-container">
+                  <div class="kesan-content putu">
+                    <div class="foto">
+                      <img
+                        src="image/content-form/putu-gede.jpg"
+                        alt="I Putu Gede Ari Suardana"
+                      />
+                    </div>
+                    <div class="nama-destinasi">
+                      <h3>I Putu Gede Ari Suardana</h3>
+                      <p>Air Terjun Sendang Gile dan Tiu Kelep</p>
+                    </div>
+                    <div class="kesan">
+                      <p>
+                        Meskipun jalan menuju ke tempat ini agak susah,, tpi
+                        dibayarkan semua dengan pemandangan indah air terjun,
+                        airnya bening dan dingin banget.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="kesan-content">
+                    <div class="foto">
+                      <img
+                        src="image/content-form/Fajar-p.jpg"
+                        alt="Fajar P."
+                      />
+                    </div>
+                    <div class="nama-destinasi">
+                      <h3>Fajar P.</h3>
+                      <p>Lombok</p>
+                    </div>
+                    <div class="kesan">
+                      <p>
+                        Pengalaman yg tak terlupakan Laut yang masih virgin,
+                        coral yg masih terjaga dan biota laut yg jarang di temui
+                        <br /><br />
+                        Chris teaches us cara snorkeling, overcome our fear and
+                        get acquainted with laut :)
+                        <br /><br />
+                        Perjalanan yg tak ternilai, Thanks Chris and team
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content Gallery -->
+      <div class="content-gallery" id="content-gallery">
+        <div
+          class="container container-750"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <h2>
+            Highlight of <strong style="color: #004b79">Indonesia</strong>
+          </h2>
+          <p><i>The beautiful view of paradise island, INDONESIA</i></p>
+          <div class="row gallery-image">
+            <div class="col-20 photo-box">
+              <div class="photo" onclick="openModal();currentSlide(1)">
+                <img
+                  src="image/content-destination/destination-bali.jpg"
+                  alt=""
+                />
+                <div class="transparent-box">
+                  <div class="caption">
+                    <p>Bali</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-20 photo-box">
+              <div class="photo" onclick="openModal();currentSlide(2)">
+                <img
+                  src="image/content-destination/destination-jakarta.jpg"
+                  alt=""
+                />
+                <div class="transparent-box">
+                  <div class="caption">
+                    <p>DKI Jakarta</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-20 photo-box">
+              <div class="photo" onclick="openModal();currentSlide(3)">
+                <img
+                  src="image/content-destination/destination-mahameru.jpg"
+                  alt=""
+                />
+                <div class="transparent-box">
+                  <div class="caption">
+                    <p>Mount Semeru</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-20 photo-box" onclick="openModal();currentSlide(4)">
+              <div class="photo">
+                <img
+                  src="image/content-destination/destination-mandalika.jpg"
+                  alt=""
+                />
+                <div class="transparent-box">
+                  <div class="caption">
+                    <p>Mandalika Circuit</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row gallery-image">
+            <div class="col-20 photo-box" onclick="openModal();currentSlide(5)">
+              <div class="photo">
+                <img
+                  src="image/content-destination/destination-rajaampat.jpg"
+                  alt=""
+                />
+                <div class="transparent-box">
+                  <div class="transparent-box">
+                    <div class="caption">
+                      <p>Rajaampat</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-20 photo-box" onclick="openModal();currentSlide(6)">
+              <div class="photo">
+                <img src="image/content-gallery/gallery-borobudur.jpg" alt="" />
+                <div class="transparent-box">
+                  <div class="caption">
+                    <p>Borobudur Temple</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-20 photo-box" onclick="openModal();currentSlide(7)">
+              <div class="photo">
+                <img
+                  src="image/content-gallery/gallery-kalimantan.jpg"
+                  alt=""
+                />
+                <div class="transparent-box">
+                  <div class="caption">
+                    <p>Kalimantan</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-20 photo-box">
+              <div class="photo" onclick="openModal();currentSlide(8)">
+                <img src="image/content-gallery/gallery-padang.jpg" alt="" />
+                <div class="transparent-box">
+                  <div class="caption">
+                    <p>Padang</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            <div class="mySlides">
+              <div class="numbertext">1 / 8</div>
+              <img
+                src="image/content-destination/destination-bali.jpg"
+                style="width: 100%"
+              />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 8</div>
+              <img
+                src="image/content-destination/destination-jakarta.jpg"
+                style="width: 100%"
+              />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 8</div>
+              <img
+                src="image/content-destination/destination-mahameru.jpg"
+                style="width: 100%"
+              />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 8</div>
+              <img
+                src="image/content-destination/destination-mandalika.jpg"
+                style="width: 100%"
+              />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">5 / 8</div>
+              <img
+                src="image/content-destination/destination-rajaampat.jpg"
+                style="width: 100%"
+              />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">6 / 8</div>
+              <img
+                src="image/content-gallery/gallery-borobudur.jpg"
+                style="width: 100%"
+              />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">7 / 8</div>
+              <img
+                src="image/content-gallery/gallery-kalimantan.jpg"
+                style="width: 100%"
+              />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">8 / 8</div>
+              <img
+                src="image/content-gallery/gallery-padang.jpg"
+                style="width: 100%"
+              />
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="image/content-destination/destination-bali.jpg"
+                style="width: 100%"
+                onclick="currentSlide(1)"
+                alt="Bali"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="image/content-destination/destination-jakarta.jpg"
+                style="width: 100%"
+                onclick="currentSlide(2)"
+                alt="DKI Jakarta"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="image/content-destination/destination-mahameru.jpg"
+                style="width: 100%"
+                onclick="currentSlide(3)"
+                alt="Mount Semeru"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="image/content-destination/destination-mandalika.jpg"
+                style="width: 100%"
+                onclick="currentSlide(4)"
+                alt="Mandalika Circuit"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="image/content-destination/destination-rajaampat.jpg"
+                style="width: 100%"
+                onclick="currentSlide(5)"
+                alt="Rajaampat"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="image/content-gallery/gallery-borobudur.jpg"
+                style="width: 100%"
+                onclick="currentSlide(6)"
+                alt="Borobudur Temple"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="image/content-gallery/gallery-kalimantan.jpg"
+                style="width: 100%"
+                onclick="currentSlide(7)"
+                alt="Kalimantan"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="image/content-gallery/gallery-padang.jpg"
+                style="width: 100%"
+                onclick="currentSlide(8)"
+                alt="Padang"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content Virtual Tour -->
+      <div class="content-tour" id="content-tour">
+        <div
+          class="container container-750"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+        >
+          <h2><strong style="color: #004b79">Virtual</strong> Tour</h2>
+          <p>
+            <i>We will show you the beautiful tour in "Wonderland Indonesia"</i>
+          </p>
+          <div class="embed-youtube text-center">
+            <iframe
+              src="https://www.youtube.com/embed/aKtb7Y3qOck"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content "Info Lebih Lanjut" -->
+      <div
+        class="content-message"
+        id="content-message"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div class="container-contact">
+          <div class="main-contact">
+            <h2 class="contact-content">For More Information</h2>
+            <h1 class="contact-content roboto">(+62) - 812 8442 1228</h1>
+            <p class="contact-content roboto">
+              We provide 24/7 customer service. For service fees charged to the
+              customer.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-container">
+      <div class="footer">
+        <div class="footer-content">
+          <div class="footer-heading footer-1">
+            <h2>About Us</h2>
+            <div class="footer-item">
+              <a href="#content-header">Home</a>
+              <a href="#content-about">About Us</a>
+              <a href="#">News</a>
+              <a href="#content-destination">Destination</a>
+              <a href="#content-recommendation">Recommendation</a>
+              <a href="#content-gallery">Gallery</a>
+              <a href="#content-tour">Virtual Tour</a>
+            </div>
+          </div>
+          <div class="footer-heading footer-2">
+            <h2>Contact Us</h2>
+            <div class="footer-item">
+              <a href="#">Travel Guide</a>
+              <a href="#">Support</a>
+              <a href="#content-message">Contact</a>
+              <a href="#">Sponsorship</a>
+            </div>
+          </div>
+
+          <div class="footer-heading footer-email-form" style="margin-right: 0">
+            <h2>Lets travel with Us</h2>
+            <input
+              type="email"
+              placeholder="Enter your Email Address"
+              id="footer-email"
+            />
+            <input type="submit" value="Sign Up" id="footer-email-btn" />
+          </div>
+        </div>
+
+        <div class="socials box-size-it">
+          <div>
+            <a
+              target="_blank"
+              href="https://www.facebook.com/TravelokaID/?brand_redir=1391950997779915"
+              ><img src="image/footer/fbLogo.png"
+            /></a>
+          </div>
+          <div>
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=xH3ddZy7emw&t=15s"
+              ><img src="image/footer/LinkLogo.png"
+            /></a>
+          </div>
+          <div>
+            <a href="#"><img src="image/footer/twitterLogo.png" /></a>
+          </div>
+          <div>
+            <a href="#"><img src="image/footer/igLogo.png" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("slide");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000);
+      }
+    </script>
+    <script>
+      $(".carousel").owlCarousel({
+        margin: 20,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        scrollPerPage: false,
+        responsive: true,
+        responsiveRefreshRate: 200,
+        responsiveBaseWidth: window,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+    </script>
+    <script>
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
+  </body>
+</html>
